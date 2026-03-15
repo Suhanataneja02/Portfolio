@@ -1,131 +1,430 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Suhana Taneja | Portfolio</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Suhana Taneja | Cybersecurity Portfolio</title>
+
 <style>
-body{
-font-family: Arial;
+
+*{
 margin:0;
-background:#f4f4f4;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
 }
 
-header{
-background:#222;
+body{
+background:#0f172a;
 color:white;
-padding:20px;
-text-align:center;
+scroll-behavior:smooth;
 }
+
+/* NAVBAR */
 
 nav{
-background:#444;
-padding:10px;
+position:fixed;
+top:0;
+width:100%;
+background:#020617;
+padding:18px;
 text-align:center;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.4);
 }
 
 nav a{
-color:white;
+color:#e2e8f0;
 margin:15px;
 text-decoration:none;
-font-weight:bold;
+font-size:15px;
+transition:0.3s;
 }
+
+nav a:hover{
+color:#a78bfa;
+}
+
+/* SECTIONS */
 
 section{
-padding:40px;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:80px 20px;
 }
 
-.container{
-background:white;
-padding:20px;
-margin:20px;
-border-radius:10px;
+/* ABOUT */
+
+#about{
+background:linear-gradient(135deg,#0e1079,#35166b,#9333ea);
 }
+
+/* PROFILE PHOTO */
+
+.profile-pic{
+width:200px;
+height:200px;
+object-fit:cover;
+border-radius:50%;
+margin-bottom:20px;
+border:4px solid white;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* NAME */
+
+#about h1{
+font-size:52px;
+margin-bottom:10px;
+}
+
+#about p{
+max-width:700px;
+font-size:18px;
+opacity:0.9;
+}
+
+/* TITLES */
 
 h2{
-color:#333;
+margin-bottom:40px;
+font-size:36px;
+color:#c4b5fd;
 }
 
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:10px;
+/* SKILLS */
+
+.skill-box{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+max-width:900px;
 }
+
+.skill{
+background:#1e293b;
+padding:12px 20px;
+margin:10px;
+border-radius:25px;
+transition:0.3s;
+border:1px solid #334155;
+}
+
+.skill:hover{
+background:#7c3aed;
+transform:translateY(-5px);
+}
+
+/* CARD CONTAINER */
+
+.card-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+max-width:1100px;
+}
+
+/* CARDS */
+
+.card{
+background:#1e293b;
+margin:15px;
+padding:25px;
+width:300px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+transition:0.3s;
+border:1px solid #334155;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,0.6);
+}
+
+/* SECTION COLORS */
+
+#education{
+background:#020617;
+}
+
+#projects{
+background:#0f172a;
+}
+
+#certificates{
+background:#020617;
+}
+
+#achievements{
+background:#0f172a;
+}
+
+/* CONTACT */
+
+#contact{
+background:linear-gradient(135deg,#1e1b4b,#312e81);
+}
+
+#contact p{
+margin:8px;
+font-size:17px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+font-size:14px;
+color:#94a3b8;
+}
+
 </style>
+
 </head>
 
 <body>
 
-<header>
-<h1>Suhana Taneja</h1>
-<p>Computer Science Student | Cybersecurity Enthusiast</p>
-</header>
+<!-- NAVBAR -->
 
 <nav>
+
 <a href="#about">About</a>
 <a href="#education">Education</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
-<a href="#research">Research</a>
+<a href="#certificates">Certificates</a>
+<a href="#achievements">Achievements</a>
 <a href="#contact">Contact</a>
+
 </nav>
 
+
+<!-- ABOUT -->
+
 <section id="about">
-<div class="container">
-<h2>About Me</h2>
-<p>I am a Computer Science student interested in cybersecurity and ethical hacking. I enjoy learning about network security, vulnerability assessment, and penetration testing.</p>
-</div>
+
+<img src="profile.jpeg" class="profile-pic">
+
+<h1>Suhana</h1>
+
+<h3>Cybersecurity Enthusiast | Computer Science Student</h3>
+
+<br>
+
+<p>
+
+Computer Science student passionate about cybersecurity, ethical hacking and secure systems.
+Interested in cryptography, network security and vulnerability assessment while building
+practical security solutions through research and cybersecurity projects.
+
+</p>
+
 </section>
+
+
+<!-- EDUCATION -->
 
 <section id="education">
-<div class="container">
+
 <h2>Education</h2>
-<p><b>B.Tech in Computer Science</b></p>
-<p>Your University Name</p>
-<p>2023 – Present</p>
+
+<div class="card-container">
+
+<div class="card">
+<h3>Lovely Professional University</h3>
+<p>B.Tech Computer Science & Engineering</p>
+<p>CGPA: 7.51</p>
+<p>Aug 2023 – Present</p>
 </div>
+
+<div class="card">
+<h3>MGN Public School</h3>
+<p>Intermediate</p>
+<p>84%</p>
+</div>
+
+<div class="card">
+<h3>St Joseph’s Convent School</h3>
+<p>Matriculation</p>
+<p>90%</p>
+</div>
+
+</div>
+
 </section>
+
+
+<!-- SKILLS -->
 
 <section id="skills">
-<div class="container">
+
 <h2>Skills</h2>
-<ul>
-<li>Python</li>
-<li>C++</li>
-<li>Java</li>
-<li>Nmap</li>
-<li>Wireshark</li>
-<li>Burp Suite</li>
-</ul>
+
+<div class="skill-box">
+
+<div class="skill">Python</div>
+<div class="skill">Shell Scripting</div>
+<div class="skill">C++</div>
+<div class="skill">Windows OS</div>
+<div class="skill">Kali Linux</div>
+<div class="skill">Cryptography</div>
+<div class="skill">Networking</div>
+<div class="skill">Steganography</div>
+<div class="skill">Nmap</div>
+<div class="skill">Wireshark</div>
+<div class="skill">Burp Suite</div>
+<div class="skill">Gobuster</div>
+<div class="skill">Hydra</div>
+<div class="skill">SQLmap</div>
+<div class="skill">Exiftool</div>
+<div class="skill">John the Ripper</div>
+
 </div>
+
 </section>
+
+
+<!-- PROJECTS -->
 
 <section id="projects">
-<div class="container">
+
 <h2>Projects</h2>
-<p><b>Cybersecurity Research Project</b></p>
-<p>Research focused on analyzing cybersecurity threats and defense mechanisms.</p>
+
+<div class="card-container">
+
+<div class="card">
+
+<h3>AI-Based Real-Time Phishing Detection System</h3>
+
+<p>
+
+Developed an AI-based system that detects phishing websites in real time by
+analyzing suspicious URL patterns and security indicators.
+
+</p>
+
+<p><b>Tech:</b> Python, Machine Learning, Flask, HTML, CSS</p>
+
 </div>
+
+<div class="card">
+
+<h3>Quantum Cryptography Research Paper</h3>
+
+<p>
+
+Research on advancements and challenges in quantum cryptography and
+post-quantum cybersecurity threats.
+
+</p>
+
+<p><b>Tech:</b> Quantum Key Distribution, Cryptography Analysis</p>
+
+</div>
+
+<div class="card">
+
+<h3>Smart Door Lock System</h3>
+
+<p>
+
+Arduino-based smart door locking system with GSM alerts,
+secure keypad authentication and intrusion detection.
+
+</p>
+
+<p><b>Tech:</b> Arduino Uno, GSM Module, Embedded C</p>
+
+</div>
+
+</div>
+
 </section>
 
-<section id="research">
-<div class="container">
-<h2>Research & Publications</h2>
-<p>Title of Research Paper</p>
-<p>Short abstract of your research.</p>
+
+<!-- CERTIFICATES -->
+
+<section id="certificates">
+
+<h2>Certificates</h2>
+
+<div class="card-container">
+
+<div class="card">Ethical Hacker – Cisco Networking Academy</div>
+<div class="card">Cyber Job Simulation – Deloitte</div>
+<div class="card">Advent of Cyber – TryHackMe</div>
+<div class="card">Python Programming with OOPS – Cipher Schools</div>
+<div class="card">Cyber Security & Ethical Hacking – Secuneus Tech</div>
+
 </div>
+
 </section>
+
+
+<!-- ACHIEVEMENTS -->
+
+<section id="achievements">
+
+<h2>Achievements</h2>
+
+<div class="card-container">
+
+<div class="card">
+Solved 74 picoCTF cybersecurity challenges (52 Easy, 22 Medium) within 3 days
+</div>
+
+<div class="card">
+Completed Advent of Cyber 2025 by TryHackMe solving all 24 cybersecurity challenges
+</div>
+
+<div class="card">
+Achieved Top 5% global ranking on TryHackMe platform
+</div>
+
+<div class="card">
+Published research paper on Quantum Cryptography in IEEE Xplore
+</div>
+
+<div class="card">
+Participated in Encrypted Warfare CTF at Lovely Professional University
+</div>
+
+<div class="card">
+Participated in Nullcon CTF organized by BITS Pilani Goa (Online Mode)
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
 
 <section id="contact">
-<div class="container">
+
 <h2>Contact</h2>
-<p>Email: yourmail@email.com</p>
-<p>GitHub: github.com/yourusername</p>
-<p>LinkedIn: linkedin.com/in/yourprofile</p>
-</div>
+
+<p>Email: suhanataneja145@gmail.com</p>
+<p>GitHub: github.com/Suhanataneja02</p>
+<p>LinkedIn: linkedin.com/in/suhana-taneja-001139294</p>
+<p>Phone: +91 6284602861</p>
+
 </section>
 
+
 <footer>
-<p>© 2026 Suhana Taneja</p>
+
+© 2026 Suhana Taneja | Cybersecurity Portfolio
+
 </footer>
 
 </body>
